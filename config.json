@@ -1,0 +1,15 @@
+{
+    "servicename":"",
+    "hetrixlink":"",
+    
+    "token": "",
+    "guildid": "",
+    "channelid": "",
+    "messageid": "",
+    
+    "chromepath": "",
+    
+    "lang": "en",
+    "updateinterval": 120,
+    "autokiller": true
+}
