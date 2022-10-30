@@ -9,11 +9,13 @@ if(lang==="fr"){
     statusembeddesc="__Légende :__\n<:UP:1036089511064653854> Serveur en ligne\n<:MAINTENANCE:1036089510032838706>: Server en maintenance\n<:DOWN:1036089508187349073>: Serveur hors ligne"
     initembeddesc="Salut ! Je viens juste de remarquer que vous n'avez pas configuré l'id du message dans le fichier de configuration. Vous devez donc copier l'id de ce message et le coller dans la config."
     messagedeleted="Euh... Vous venez de supprimer le message de statut :C. Je vais donc m'arrêter de force pour que vous puissiez me reconfigurer ;)"
+    nextupdate="Prochaine mise à jour "
 }
 else if(lang==="en"){
     statusembeddesc="__Legend:__\n<:UP:1036089511064653854>: Server is up\n<:MAINTENANCE:1036089510032838706>: Server is on maintenance\n<:DOWN:1036089508187349073>: Server is down"
     initembeddesc="Hi! I just noticed that you have not set the message id in the configuration file. So I'm sending this message for you to copy the id of the message and paste it into the config."
     messagedeleted="Huuum... You deleted my status message :C. So I'm going to force myself to stop so that you can reconfigure me ;)"
+    nextupdate="Next update "
 }
 
 //UPDATE FUNCTION
@@ -30,7 +32,11 @@ async function updatestatus(){
         .setDescription(statusembeddesc)    
         .setImage('attachment://screen.png')
         .setTimestamp()
-    client.channels.cache.get(channelid).messages.fetch(messageid).then(msg => msg.edit({ embeds: [statusembed], files: ['./screen.png'] }))
+    time=Math.floor(Date.now() / 1000)+updateinterval+9
+    time=`${time}`
+    time="<t:"+time+":R>"
+    content=nextupdate+time
+    client.channels.cache.get(channelid).messages.fetch(messageid).then(msg => msg.edit({ content: content, embeds: [statusembed], files: ['./screen.png'] }))
 }
 
 //FUNCTION THAT TAKE A SCREEN OF HETRIX PAGE
