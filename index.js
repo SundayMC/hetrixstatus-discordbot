@@ -21,7 +21,7 @@ async function updatestatus(){
     console.log("I'm updating the embed :)")
     statusname=servicename+" Status"
     await hetrixscreen();
-    await new Promise(resolve => setTimeout(resolve, 5000))
+    await new Promise(resolve => setTimeout(resolve, 6000))
     statusembed = new EmbedBuilder()
         .setColor(0x555555)
         .setTitle(statusname)
@@ -43,7 +43,7 @@ async function hetrixscreen(){
         
             console.log(`Getting a screen...`)
             await page.goto(hetrixlink)
-            await page.waitForTimeout(2500)
+            await page.waitForTimeout(3500)
             await page.screenshot({ path: 'screen.png', fullPage: true })
         
             await browser.close()
