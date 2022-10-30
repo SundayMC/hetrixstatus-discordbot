@@ -13,7 +13,7 @@ Configuration :
 The configuration is in the form:
 ```json
 {
-"servicename:"", //The name of your service
+"servicename":"", //The name of your service
 "hetrixlink":"", //The link to your HetrixTools status page
 
 "token": "", //The token of your bot
