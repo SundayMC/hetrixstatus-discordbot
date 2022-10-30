@@ -1,4 +1,5 @@
 # HetrixStatus DiscordBot
+![](https://repository-images.githubusercontent.com/559248481/d7387b39-4858-4784-aac1-2b3f1f379fa3)
 ## **🇬🇧** English:
 ### This Discord bot allows you to get a better embed than the one offered by the official HetrixTools webhook. It first takes a screenshot of your status page with Puppeteer and then sends it in an embed.
 **Dependencies:**
