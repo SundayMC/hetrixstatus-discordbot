@@ -29,7 +29,7 @@ The configuration is in the form:
 ```
 Where it is not contraindicated, you should fill in all fields at the first start.
 Next, you should copy the id of the message that will be sent in the specified channel and paste it into the messageid field.
-Finally, you need to fill in the ``chromepath'' field. *Tip: In your code folder, run the command: ``node -e "console.log(require('puppeteer').executablePath())"`` to get this path*.
+Finally, you need to fill in the ``chromepath`` field. *Tip: In your code folder, run the command: ``node -e "console.log(require('puppeteer').executablePath())"`` to get this path*.
 
 And that's it!
 For any further requests, open an issue.
