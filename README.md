@@ -19,25 +19,3 @@ Finally, you need to fill in the ``chromepath`` field. *Tip: In your code folder
 
 And that's it!
 For any further requests, open an issue.
-
-## **🇫🇷** Français :
-### Ce bot Discord vous permet de générer un meilleur embed que celui proposé par le webhook officiel d'HetrixTools. Il récupère tout d'abord une capture d'écran de votre page de statut grâce à Puppeteer puis l'envoie dans un embed.
-
-**Dépendances :**
-* discord.js (14.6.0)
-* puppeteer (19.2.0)
-* puppeteer-core (19.2.0)
-* puppeteer-extra (3.3.4)
-
-**Utilisation :**
-Configuration :
-La configuration se présente sous la forme :
-![](https://i.ibb.co/Czmsfj5/configjsonfr.png)
-
-Là où ce n'est pas contre-indiqué, vous devez remplir tous les champs dès le premier démarrage.
-Ensuite, vous devez copier l'id du message qui sera envoyé dans le channel spécifié et le coller dans le champ ``messageid``.
-Enfin, vous devez remplir le champ ``chromepath``. *Astuce : Dans le dossier de votre code, effectuez la commande : ``node -e "console.log(require('puppeteer').executablePath())"`` pour obtenir ce chemin d'accès*.
-
-Et voilà, c'est enfin fini !
-
-Pour toutes demandes supplémentaire, ouvrez une issue.
